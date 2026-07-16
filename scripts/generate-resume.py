@@ -79,7 +79,7 @@ def build():
     # Summary
     pdf.section_title("Professional Summary")
     pdf.body_text(
-        "Full Stack Developer with 3+ years of experience designing, building, and shipping "
+        "Full Stack Developer with 2+ years of experience designing, building, and shipping "
         "production web applications on the MERN stack (MongoDB, Express.js, React.js, Node.js). "
         "Currently building Reelax - an influencer marketing platform - across brands web, admin "
         "tools, core APIs, and background microservices. Strong in REST APIs, third-party "

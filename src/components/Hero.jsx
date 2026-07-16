@@ -23,7 +23,7 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <strong>3+</strong>
+            <strong>2+</strong>
             <span>Years experience</span>
           </div>
           <div className="hero-stat">

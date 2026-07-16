@@ -11,7 +11,7 @@ export const profile = {
   github: 'https://github.com/harshvgupta1',
   resumeUrl: '/resume.pdf',
   about: [
-    'Full Stack Developer with 3+ years of experience building production web apps on the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    'Full Stack Developer with 2+ years of experience building production web apps on the MERN stack (MongoDB, Express.js, React.js, Node.js).',
     'At Bridgeness Technologies I work on Reelax — an influencer marketing platform — across brands web, admin tools, core APIs, and background microservices.',
     'I care about clean REST integrations, responsive UX, and architecture that stays maintainable as products scale.',
   ],
