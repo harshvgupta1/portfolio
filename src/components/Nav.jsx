@@ -19,7 +19,6 @@ export default function Nav() {
       <div className="container nav-inner">
         <a className="nav-brand" href="#top" onClick={close}>
           {profile.shortName}
-          <span>.</span>
         </a>
 
         <button
