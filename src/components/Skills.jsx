@@ -1,6 +1,8 @@
 import { skills } from '../data/content'
 
 export default function Skills() {
+  const entries = Object.entries(skills)
+
   return (
     <section className="section section-soft" id="skills">
       <div className="container">
@@ -13,9 +15,12 @@ export default function Skills() {
         </div>
 
         <div className="skills-grid">
-          {Object.entries(skills).map(([group, items]) => (
+          {entries.map(([group, items], index) => (
             <div className="skill-card" key={group}>
-              <h3>{group}</h3>
+              <div className="skill-card-head">
+                <span className="skill-index">{String(index + 1).padStart(2, '0')}</span>
+                <h3>{group}</h3>
+              </div>
               <ul>
                 {items.map((item) => (
                   <li key={item}>{item}</li>

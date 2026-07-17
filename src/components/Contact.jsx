@@ -5,6 +5,8 @@ export default function Contact() {
     <section className="section" id="contact">
       <div className="container">
         <div className="contact-panel">
+          <div className="contact-orb" aria-hidden="true" />
+          <span className="contact-eyebrow">Contact</span>
           <h2>Have a project or a role in mind?</h2>
           <p>
             I’m open to full-stack opportunities and collaborations. Drop me an email or connect on

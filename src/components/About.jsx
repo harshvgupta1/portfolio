@@ -17,6 +17,8 @@ export default function About() {
           </div>
 
           <div className="about-card">
+            <div className="about-card-glow" aria-hidden="true" />
+            <p className="about-card-title">Let’s connect</p>
             <div className="about-row">
               <span>Location</span>
               <strong>{profile.location}</strong>
