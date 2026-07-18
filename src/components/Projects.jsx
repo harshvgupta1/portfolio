@@ -1,6 +1,15 @@
 import { projects } from '../data/content'
 
 const icons = [
+  <svg key="ai" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path
+      d="M8 10h.01M12 10h.01M16 10h.01M7 16h6l3 3v-3h1a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2Z"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>,
   <svg key="fe" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
     <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.7" />
     <path d="M8 21h8M12 18v3" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -47,8 +56,8 @@ export default function Projects() {
           <span className="eyebrow">Selected work</span>
           <h2 className="section-title">What I’ve built on Reelax.</h2>
           <p className="section-lead">
-            An influencer marketing platform — I work across its frontend apps, core API, and
-            background services.
+            An influencer marketing platform — I work across its frontend apps, core API,
+            background services, and AI-powered discovery.
           </p>
         </div>
 
@@ -61,35 +70,46 @@ export default function Projects() {
 
             return (
               <CardTag className="project-card" key={project.title} {...linkProps}>
-                <div className="project-top">
-                  <span className="project-icon">{icons[index % icons.length]}</span>
-                  {project.liveUrl ? (
-                    <svg
-                      className="project-arrow"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M4 12L12 4M12 4H5.5M12 4v6.5"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : null}
+                {project.image ? (
+                  <div className="project-media">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      loading="lazy"
+                    />
+                  </div>
+                ) : null}
+                <div className="project-body">
+                  <div className="project-top">
+                    <span className="project-icon">{icons[index % icons.length]}</span>
+                    {project.liveUrl ? (
+                      <svg
+                        className="project-arrow"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M4 12L12 4M12 4H5.5M12 4v6.5"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    ) : null}
+                  </div>
+                  <span className="project-tag">{project.role}</span>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <ul className="project-tech">
+                    {project.tech.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <span className="project-tag">{project.role}</span>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <ul className="project-tech">
-                  {project.tech.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
               </CardTag>
             )
           })}

@@ -12,7 +12,7 @@ export const profile = {
   resumeUrl: '/resume.pdf',
   about: [
     'Full Stack Developer with 2+ years of experience building production web apps on the MERN stack (MongoDB, Express.js, React.js, Node.js).',
-    'At Bridgeness Technologies I work on Reelax — an influencer marketing platform — across brands web, admin tools, core APIs, and background microservices.',
+    'At Bridgeness Technologies I work on Reelax — an influencer marketing platform — across brands web, admin tools, core APIs, background microservices, and AI-powered discovery.',
     'I care about clean REST integrations, responsive UX, and architecture that stays maintainable as products scale.',
   ],
 }
@@ -24,8 +24,9 @@ export const experience = [
     period: 'Jan 2024 – Present',
     bullets: [
       'Build and maintain responsive full-stack apps with React.js, Node.js, Express.js, and MongoDB for the Reelax platform.',
+      'Building Reelax AI Search / AI Chat — a conversational interface that turns natural-language queries into live influencer filters, tags, and discovery table results across Instagram and YouTube.',
       'Implemented Prompt AI to generate automated scripts and task-specific instructions.',
-      'Integrated Giddh Accounting API for invoicing, purchase orders, and financial automation.',
+      'Integrated Giddh Accounting API and Zoho APIs for invoicing, purchase orders, CRM, and financial automation.',
       'Built Instagram Graph API Comment-to-DM automation to improve influencer engagement.',
       'Designed RESTful APIs for seamless frontend–backend communication and optimized load performance.',
       'Collaborated with designers and engineers on pixel-perfect responsive UI and scalable Git workflows.',
@@ -44,6 +45,15 @@ export const education = [
 
 export const projects = [
   {
+    title: 'Reelax AI Search',
+    role: 'Full Stack · AI',
+    description:
+      'Conversational AI chat for influencer discovery — natural-language queries update filters, tags, and a live discovery table for Instagram and YouTube creators in real time.',
+    tech: ['React', 'Node.js', 'AI Chat', 'Elasticsearch', 'REST API'],
+    liveUrl: 'https://brands.getreelax.com',
+    image: '/projects/ai-search.png',
+  },
+  {
     title: 'Reelax Brands Platform',
     role: 'Frontend',
     description:
@@ -56,7 +66,7 @@ export const projects = [
     title: 'Reelax Core API',
     role: 'Backend',
     description:
-      'Express API powering campaigns, payments (Razorpay/Cashfree), messaging, KYC, credits, and AI features — with MongoDB, MySQL, Redis, and Elasticsearch.',
+      'Express API powering campaigns, payments (Razorpay/Cashfree), messaging, KYC, credits, Zoho API integrations, and AI features — with MongoDB, MySQL, Redis, and Elasticsearch.',
     tech: ['Node.js', 'Express', 'MongoDB', 'MySQL', 'Redis', 'JWT'],
     liveUrl: 'https://getreelax.com',
     image: null,
@@ -89,7 +99,9 @@ export const skills = {
     'REST API',
     'Giddh API',
     'Instagram Graph API',
+    'Zoho API',
     'Prompt AI',
+    'AI Chat',
     'Postman',
     'GitHub',
     'Figma',

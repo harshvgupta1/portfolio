@@ -82,8 +82,8 @@ def build():
         "Full Stack Developer with 2+ years of experience designing, building, and shipping "
         "production web applications on the MERN stack (MongoDB, Express.js, React.js, Node.js). "
         "Currently building Reelax - an influencer marketing platform - across brands web, admin "
-        "tools, core APIs, and background microservices. Strong in REST APIs, third-party "
-        "integrations, AI automation, performance optimization, and Agile collaboration."
+        "tools, core APIs, microservices, and AI-powered discovery. Strong in REST APIs, third-party "
+        "integrations, AI chat/automation, performance optimization, and Agile collaboration."
     )
 
     # Experience
@@ -101,13 +101,12 @@ def build():
 
     bullets = [
         "Build and maintain responsive full-stack applications with React.js, Node.js, Express.js, and MongoDB for the Reelax influencer marketing platform.",
-        "Own features across brands SPA (brands.getreelax.com), admin console, core REST APIs, and async microservices for Instagram/YouTube sync.",
+        "Building Reelax AI Search / AI Chat - a conversational UI that turns natural-language queries into live influencer filters, tags, and discovery results for Instagram and YouTube.",
         "Implemented Prompt AI to generate automated scripts and task-specific instructions for product workflows.",
-        "Integrated Giddh Accounting API for invoicing, purchase orders, and financial record automation.",
+        "Integrated Giddh Accounting API and Zoho APIs for invoicing, purchase orders, CRM, and financial record automation.",
         "Built Instagram Graph API Comment-to-DM automation to improve influencer engagement.",
-        "Integrated payments and commerce flows (Razorpay/Cashfree), JWT auth, Redis queues (BullMQ), and Elasticsearch-powered search.",
-        "Optimized frontend/API performance for faster load times and better UX; collaborated with design and engineering on pixel-perfect responsive UI.",
-        "Streamlined Git workflows and contributed to scalable architecture, reducing maintenance effort.",
+        "Integrated payments (Razorpay/Cashfree), JWT auth, Redis queues (BullMQ), and Elasticsearch-powered search.",
+        "Optimized frontend/API performance and collaborated on pixel-perfect responsive UI and scalable Git workflows.",
     ]
     for b in bullets:
         pdf.bullet(b)
@@ -116,24 +115,24 @@ def build():
     pdf.section_title("Key Projects")
     projects = [
         (
+            "Reelax AI Search",
+            "React, Node.js, AI Chat, Elasticsearch",
+            "Conversational AI chat for influencer discovery - NL queries update filters, tags, and a live Instagram/YouTube creator table in real time. Live: brands.getreelax.com",
+        ),
+        (
             "Reelax Brands Platform",
             "React, Redux, JavaScript",
-            "Brand-facing SPA for influencer discovery, campaigns, marketplace, analytics, contracts, and subscriptions. Live: brands.getreelax.com",
+            "Brand-facing SPA for influencer discovery, campaigns, marketplace, analytics, contracts, and subscriptions.",
         ),
         (
             "Reelax Core API",
             "Node.js, Express, MongoDB, MySQL, Redis, JWT",
-            "Backend for campaigns, payments, messaging, KYC, credits, and AI features powering getreelax.com.",
+            "Backend for campaigns, payments, messaging, KYC, credits, Zoho API integrations, and AI features.",
         ),
         (
-            "Reelax Microservices",
-            "Node.js, BullMQ, Redis, Elasticsearch, Docker",
-            "Workers for Instagram & YouTube sync, enrichment, notifications, and queue processing on Cloud Run.",
-        ),
-        (
-            "Reelax Admin Console",
-            "React, Redux, MUI, AG Grid",
-            "Internal ops UI for KYC review, organisations, payouts, contracts, and campaign administration.",
+            "Reelax Microservices & Admin",
+            "Node.js, BullMQ, React, MUI",
+            "Async IG/YT sync workers plus internal ops console for KYC, payouts, contracts, and campaign admin.",
         ),
     ]
     for title, tech, desc in projects:
@@ -152,7 +151,7 @@ def build():
         ("Frontend", "HTML, CSS, JavaScript, React.js, Redux, Responsive Design"),
         ("Backend", "Node.js, Express.js, REST APIs, JWT, BullMQ, Docker"),
         ("Databases", "MongoDB, MySQL, Redis, Elasticsearch"),
-        ("Integrations", "Giddh API, Instagram Graph API, Razorpay, Cashfree, Prompt AI"),
+        ("Integrations", "Giddh API, Zoho API, Instagram Graph API, Razorpay, Cashfree, Prompt AI, AI Chat"),
         ("Tools", "GitHub, Postman, Figma, VS Code, Agile / Git workflows"),
     ]
     for label, value in skills:
