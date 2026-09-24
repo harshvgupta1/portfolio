@@ -3,7 +3,7 @@ export const profile = {
   shortName: 'Harsh',
   title: 'Full Stack Developer',
   tagline:
-    'I design, build, and ship scalable MERN applications — from React interfaces to Node APIs, queues, and AI automations.',
+    'I design, build, and ship scalable MERN applications — combining React, Node APIs, background queues, and AI-assisted engineering with Prompt Engineering, Cursor, and ChatGPT.',
   location: 'Noida, Uttar Pradesh, India',
   email: 'harsh872000@gmail.com',
   phone: '7905775453',
@@ -11,9 +11,10 @@ export const profile = {
   github: 'https://github.com/harshvgupta1',
   resumeUrl: '/resume.pdf',
   about: [
-    'Full Stack Developer with 2+ years of experience building production web apps on the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    'Full Stack Developer with 2+ years of experience building and scaling production web applications across the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    'Expert in AI-assisted development — leveraging Prompt Engineering, Cursor, and ChatGPT to accelerate full-stack feature delivery, code quality, test coverage, and rapid prototyping.',
     'At Bridgeness Technologies I work on Reelax — an influencer marketing platform — across brands web, admin tools, core APIs, background microservices, and AI-powered discovery.',
-    'I care about clean REST integrations, responsive UX, and architecture that stays maintainable as products scale.',
+    'I care about clean REST integrations, responsive UX, and scalable architecture that stays maintainable as products grow.',
   ],
 }
 
@@ -24,8 +25,9 @@ export const experience = [
     period: 'Jan 2024 – Present',
     bullets: [
       'Build and maintain responsive full-stack apps with React.js, Node.js, Express.js, and MongoDB for the Reelax platform.',
-      'Building Reelax AI Search / AI Chat — a conversational interface that turns natural-language queries into live influencer filters, tags, and discovery table results across Instagram and YouTube.',
-      'Implemented Prompt AI to generate automated scripts and task-specific instructions.',
+      'Built Reelax AI Search / AI Chat using Prompt Engineering and conversational LLM workflows to convert natural-language queries into real-time creator filters, tags, and discovery table results across Instagram and YouTube.',
+      'Championed AI-assisted development across the team using Cursor and ChatGPT for rapid prototyping, complex refactoring, test case generation, and API schema design.',
+      'Engineered structured prompt templates and AI automation to generate dynamic scripts and task-specific workflows.',
       'Integrated Giddh Accounting API and Zoho APIs for invoicing, purchase orders, CRM, and financial automation.',
       'Built Instagram Graph API Comment-to-DM automation to improve influencer engagement.',
       'Designed RESTful APIs for seamless frontend–backend communication and optimized load performance.',
@@ -49,7 +51,7 @@ export const projects = [
     role: 'Full Stack · AI',
     description:
       'Conversational AI chat for influencer discovery — natural-language queries update filters, tags, and a live discovery table for Instagram and YouTube creators in real time.',
-    tech: ['React', 'Node.js', 'AI Chat', 'Elasticsearch', 'REST API'],
+    tech: ['React', 'Node.js', 'Prompt Engineering', 'AI Chat', 'Elasticsearch', 'REST API'],
     liveUrl: 'https://brands.getreelax.com',
     image: '/projects/ai-search.png',
   },
@@ -92,20 +94,25 @@ export const projects = [
 ]
 
 export const skills = {
-  Frontend: ['HTML', 'CSS', 'JavaScript', 'React.js'],
-  Backend: ['Node.js', 'Express.js'],
-  Database: ['MongoDB', 'MySQL'],
-  'APIs & Tools': [
-    'REST API',
+  'AI & Tooling': [
+    'Prompt Engineering',
+    'Cursor',
+    'ChatGPT',
+    'LLM Integrations',
+    'AI-Assisted Coding',
+  ],
+  Frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux'],
+  Backend: ['Node.js', 'Express.js', 'REST APIs', 'BullMQ', 'Docker'],
+  Database: ['MongoDB', 'MySQL', 'Redis', 'Elasticsearch'],
+  'APIs & Integrations': [
+    'OpenAI / LLM APIs',
     'Giddh API',
     'Instagram Graph API',
     'Zoho API',
-    'Prompt AI',
-    'AI Chat',
-    'Postman',
-    'GitHub',
-    'Figma',
+    'Razorpay',
+    'Cashfree',
   ],
+  Tools: ['Cursor', 'VS Code', 'GitHub', 'Postman', 'Figma'],
   Practices: [
     'Responsive Design',
     'Agile Development',
