@@ -13,6 +13,7 @@ LINE = (226, 232, 240)
 OUT_PUBLIC = Path(__file__).resolve().parents[1] / "public" / "resume.pdf"
 OUT_DOWNLOADS = Path.home() / "Downloads" / "Harsh_Vardhan_Gupta_Resume.pdf"
 OUT_DOWNLOADS_ALT = Path.home() / "Downloads" / "Resume.pdf"
+OUT_DOWNLOADS_ALT2 = Path.home() / "Downloads" / "resume (1).pdf"
 
 
 class ResumePDF(FPDF):
@@ -150,11 +151,11 @@ def build():
     # Skills
     pdf.section_title("Technical Skills")
     skills = [
-        ("AI & Tooling", "Prompt Engineering, Cursor, ChatGPT, LLM Integrations, AI-Assisted Coding"),
         ("Frontend", "HTML, CSS, JavaScript, React.js, Redux, Responsive Design"),
         ("Backend", "Node.js, Express.js, REST APIs, JWT, BullMQ, Docker"),
         ("Databases", "MongoDB, MySQL, Redis, Elasticsearch"),
         ("Integrations", "Giddh API, Zoho API, Instagram Graph API, Razorpay, Cashfree, OpenAI / LLM APIs"),
+        ("AI & Tooling", "Prompt Engineering, Cursor, ChatGPT, LLM Integrations, AI-Assisted Coding"),
         ("Tools", "Cursor, VS Code, GitHub, Postman, Figma, Agile / Git workflows"),
     ]
     for label, value in skills:
@@ -193,10 +194,12 @@ def build():
     pdf.output(str(OUT_PUBLIC))
     pdf.output(str(OUT_DOWNLOADS))
     pdf.output(str(OUT_DOWNLOADS_ALT))
+    pdf.output(str(OUT_DOWNLOADS_ALT2))
     print(f"Total pages: {pdf.page_no()}")
     print(f"Wrote {OUT_PUBLIC}")
     print(f"Wrote {OUT_DOWNLOADS}")
     print(f"Wrote {OUT_DOWNLOADS_ALT}")
+    print(f"Wrote {OUT_DOWNLOADS_ALT2}")
 
 
 if __name__ == "__main__":

@@ -94,13 +94,6 @@ export const projects = [
 ]
 
 export const skills = {
-  'AI & Tooling': [
-    'Prompt Engineering',
-    'Cursor',
-    'ChatGPT',
-    'LLM Integrations',
-    'AI-Assisted Coding',
-  ],
   Frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux'],
   Backend: ['Node.js', 'Express.js', 'REST APIs', 'BullMQ', 'Docker'],
   Database: ['MongoDB', 'MySQL', 'Redis', 'Elasticsearch'],
@@ -111,6 +104,13 @@ export const skills = {
     'Zoho API',
     'Razorpay',
     'Cashfree',
+  ],
+  'AI & Tooling': [
+    'Prompt Engineering',
+    'Cursor',
+    'ChatGPT',
+    'LLM Integrations',
+    'AI-Assisted Coding',
   ],
   Tools: ['Cursor', 'VS Code', 'GitHub', 'Postman', 'Figma'],
   Practices: [
