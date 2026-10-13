@@ -1,9 +1,9 @@
 export const profile = {
   name: 'Harsh Vardhan Gupta',
   shortName: 'Harsh',
-  title: 'Full Stack Developer',
+  title: 'Software Engineer',
   tagline:
-    'I design, build, and ship scalable MERN applications — combining React, Node APIs, background queues, and AI-assisted engineering with Prompt Engineering, Cursor, and ChatGPT.',
+    'I design, build, and ship scalable applications — combining React, Node APIs, background queues, and AI-assisted engineering with Prompt Engineering, Cursor, and ChatGPT.',
   location: 'Noida, Uttar Pradesh, India',
   email: 'harsh872000@gmail.com',
   phone: '7905775453',
@@ -11,7 +11,7 @@ export const profile = {
   github: 'https://github.com/harshvgupta1',
   resumeUrl: '/resume.pdf',
   about: [
-    'Full Stack Developer with 2+ years of experience building and scaling production web applications across the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    'Software Engineer with 2.5+ years of experience building and scaling production web applications across Node.js, React.js, MongoDB, and MySQL.',
     'Expert in AI-assisted development — leveraging Prompt Engineering, Cursor, and ChatGPT to accelerate full-stack feature delivery, code quality, test coverage, and rapid prototyping.',
     'At Bridgeness Technologies I work on Reelax — an influencer marketing platform — across brands web, admin tools, core APIs, background microservices, and AI-powered discovery.',
     'I care about clean REST integrations, responsive UX, and scalable architecture that stays maintainable as products grow.',
@@ -20,7 +20,7 @@ export const profile = {
 
 export const experience = [
   {
-    role: 'Full Stack Developer',
+    role: 'Software Engineer',
     company: 'Bridgeness Technologies Pvt. Ltd.',
     period: 'Jan 2024 – Present',
     bullets: [
@@ -48,7 +48,7 @@ export const education = [
 export const projects = [
   {
     title: 'Reelax AI Search',
-    role: 'Full Stack · AI',
+    role: 'Software Engineer · AI',
     description:
       'Conversational AI chat for influencer discovery — natural-language queries update filters, tags, and a live discovery table for Instagram and YouTube creators in real time.',
     tech: ['React', 'Node.js', 'Prompt Engineering', 'AI Chat', 'Elasticsearch', 'REST API'],

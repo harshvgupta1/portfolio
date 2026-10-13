@@ -61,7 +61,7 @@ def build():
 
     pdf.set_font("Helvetica", "B", 10.0)
     pdf.set_text_color(*BLUE)
-    pdf.cell(0, 4.8, "Full Stack Developer (MERN)", new_x="LMARGIN", new_y="NEXT")
+    pdf.cell(0, 4.8, "Software Engineer", new_x="LMARGIN", new_y="NEXT")
 
     pdf.set_font("Helvetica", "", 8.2)
     pdf.set_text_color(*MUTED)
@@ -81,10 +81,10 @@ def build():
     # Summary
     pdf.section_title("Professional Summary")
     pdf.body_text(
-        "Full Stack Developer with 2+ years of experience building and scaling production web "
+        "Software Engineer with 2.5+ years of experience building and scaling production web "
         "applications across the MERN stack (MongoDB, Express.js, React.js, Node.js). Expert in "
         "AI-assisted development - leveraging Prompt Engineering, Cursor, and ChatGPT to accelerate "
-        "full-stack feature delivery, code quality, and prototyping. Currently building Reelax across "
+        "feature delivery, code quality, and prototyping. Currently building Reelax across "
         "brands web, core APIs, microservices, and LLM-powered discovery."
     )
 
@@ -92,7 +92,7 @@ def build():
     pdf.section_title("Work Experience")
     pdf.set_font("Helvetica", "B", 9.5)
     pdf.set_text_color(*INK)
-    pdf.cell(120, 4.5, "Full Stack Developer", new_x="RIGHT")
+    pdf.cell(120, 4.5, "Software Engineer", new_x="RIGHT")
     pdf.set_font("Helvetica", "", 8.5)
     pdf.set_text_color(*MUTED)
     pdf.cell(0, 4.5, "Jan 2024 - Present", align="R", new_x="LMARGIN", new_y="NEXT")

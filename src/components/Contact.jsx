@@ -9,7 +9,7 @@ export default function Contact() {
           <span className="contact-eyebrow">Contact</span>
           <h2>Have a project or a role in mind?</h2>
           <p>
-            I’m open to full-stack opportunities and collaborations. Drop me an email or connect on
+            I’m open to software engineering opportunities and collaborations. Drop me an email or connect on
             LinkedIn — I usually reply within a day.
           </p>
           <div className="contact-actions">

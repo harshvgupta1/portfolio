@@ -6,7 +6,7 @@ export default function About() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">About me</span>
-          <h2 className="section-title">A developer who ships, end to end.</h2>
+          <h2 className="section-title">An engineer who ships, end to end.</h2>
         </div>
 
         <div className="about-grid">
