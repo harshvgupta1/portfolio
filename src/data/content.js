@@ -71,8 +71,8 @@ export const projects = [
     description:
       'Architected responsive Next.js dashboards and shipped 60+ Node.js/Express REST APIs covering the end-to-end campaign lifecycle, tier-based pricing, and AI creator matching.',
     tech: ['Next.js', 'Node.js', 'Express.js', 'TypeScript', 'REST APIs', 'AI Matching'],
-    liveUrl: 'https://brands.getreelax.com',
-    image: null,
+    liveUrl: 'https://spotlyt.in/',
+    image: '/projects/spotlyt.png',
   },
   {
     title: 'Swiggy Web Clone',
