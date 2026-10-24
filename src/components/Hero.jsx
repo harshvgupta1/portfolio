@@ -1,6 +1,6 @@
 import { profile } from '../data/content'
 
-const stack = ['MongoDB', 'Express', 'React', 'Node.js']
+const stack = ['React.js', 'Next.js', 'TypeScript', 'Node.js', 'Express', 'MongoDB']
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
         <span className="hero-badge">Available for opportunities</span>
 
         <h1 className="hero-name">
-          Hi, I’m Harsh — I build <em>full-stack products</em> with the MERN stack.
+          Hi, I’m Harsh — I build <em>production platforms</em> with MERN &amp; Next.js.
         </h1>
 
         <p className="hero-tagline">{profile.tagline}</p>
@@ -43,16 +43,16 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <strong>2+</strong>
+            <strong>3</strong>
             <span>Years experience</span>
           </div>
           <div className="hero-stat">
-            <strong>4</strong>
-            <span>Product surfaces</span>
+            <strong>60+</strong>
+            <span>REST APIs shipped</span>
           </div>
           <div className="hero-stat">
-            <strong>MERN</strong>
-            <span>Core stack</span>
+            <strong>MERN &amp; Next.js</strong>
+            <span>Core platforms</span>
           </div>
         </div>
       </div>

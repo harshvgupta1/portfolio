@@ -519,6 +519,8 @@ button {
 /* ——— Experience ——— */
 .xp-timeline {
   position: relative;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .xp-card {
@@ -573,6 +575,13 @@ button {
   margin: 0 0 1.35rem;
   color: var(--ink-soft);
   font-weight: 500;
+}
+
+.xp-summary {
+  margin: -0.85rem 0 1.25rem;
+  color: var(--ink-faint);
+  font-size: 0.92rem;
+  font-style: italic;
 }
 
 .xp-bullets {
@@ -746,6 +755,23 @@ button {
 .project-card:hover .project-icon {
   transform: scale(1.06);
   color: var(--violet);
+}
+
+.project-link-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-source-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  letter-spacing: 0.02em;
 }
 
 .project-arrow {

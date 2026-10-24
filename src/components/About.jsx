@@ -43,6 +43,12 @@ export default function About() {
                 harshvgupta1
               </a>
             </div>
+            <div className="about-row">
+              <span>Portfolio</span>
+              <a href={profile.portfolio} target="_blank" rel="noreferrer">
+                portfolio-fy9a.onrender.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

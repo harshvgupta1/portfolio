@@ -54,18 +54,18 @@ export default function Projects() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Selected work</span>
-          <h2 className="section-title">What I’ve built on Reelax.</h2>
+          <h2 className="section-title">Featured platforms &amp; projects.</h2>
           <p className="section-lead">
-            An influencer marketing platform — I work across its frontend apps, core API,
-            background services, and AI-powered discovery.
+            Production MERN &amp; Next.js platforms, microservices, AI discovery, and full-stack applications.
           </p>
         </div>
 
         <div className="project-grid">
           {projects.map((project, index) => {
-            const CardTag = project.liveUrl ? 'a' : 'article'
-            const linkProps = project.liveUrl
-              ? { href: project.liveUrl, target: '_blank', rel: 'noreferrer' }
+            const targetUrl = project.liveUrl || project.githubUrl
+            const CardTag = targetUrl ? 'a' : 'article'
+            const linkProps = targetUrl
+              ? { href: targetUrl, target: '_blank', rel: 'noreferrer' }
               : {}
 
             return (
@@ -82,23 +82,28 @@ export default function Projects() {
                 <div className="project-body">
                   <div className="project-top">
                     <span className="project-icon">{icons[index % icons.length]}</span>
-                    {project.liveUrl ? (
-                      <svg
-                        className="project-arrow"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M4 12L12 4M12 4H5.5M12 4v6.5"
-                          stroke="currentColor"
-                          strokeWidth="1.6"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                    {targetUrl ? (
+                      <div className="project-link-indicator">
+                        {project.githubUrl && !project.liveUrl?.includes('brands.getreelax') && (
+                          <span className="project-source-badge">Code</span>
+                        )}
+                        <svg
+                          className="project-arrow"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M4 12L12 4M12 4H5.5M12 4v6.5"
+                            stroke="currentColor"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
                     ) : null}
                   </div>
                   <span className="project-tag">{project.role}</span>
