@@ -131,7 +131,7 @@ export const skills = {
     'JWT Authentication',
     'BullMQ',
   ],
-  'Databases & Search': ['MongoDB', 'MySQL', 'Redis', 'Elasticsearch'],
+  'Databases & Search': ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Elasticsearch'],
   'Cloud & DevOps': ['GCP', 'Azure', 'Git / GitHub'],
   'AI & Tools': [
     'Cursor',
