@@ -149,6 +149,11 @@ export const skills = {
     'Giddh',
     'Zoho',
   ],
+  'Core Fundamentals': [
+    'Data Structures & Algorithms (DSA)',
+    'System Design',
+    'OOP',
+  ],
 }
 
 export const navLinks = [
