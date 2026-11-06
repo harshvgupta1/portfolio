@@ -3,7 +3,7 @@ export const profile = {
   shortName: 'Harsh',
   title: 'Software Engineer',
   tagline:
-    'Software Engineer with 3 years of experience shipping production MERN and Next.js platforms: 60+ REST APIs, queue-driven microservices, Elasticsearch-backed search, payment integrations, and AI-assisted development.',
+    'Software Engineer with 3 years of experience shipping production MERN and Next.js platforms: 60+ REST APIs, GCP Cloud Run & CI/CD pipelines, queue-driven microservices, Elasticsearch-backed search, payment integrations, and AI-assisted development.',
   location: 'Noida, India',
   email: 'harsh872000@gmail.com',
   phone: '+91 7905775453',
@@ -15,7 +15,7 @@ export const profile = {
     'Software Engineer with 3 years of experience shipping production MERN and Next.js platforms: 60+ REST APIs, queue-driven microservices, Elasticsearch-backed search, and payment integrations.',
     'At Bridgeness Technologies (Reelax), I architect responsive dashboards and backend systems for creator discovery, campaign lifecycles, tier-based pricing, multi-step approval workflows, and automated payouts.',
     'Integrated payment gateways including Razorpay and Cashfree with JWT authentication, financial and CRM pipelines with Giddh and Zoho, and Instagram Graph API Comment-to-DM automation.',
-    'Champion of AI-assisted engineering — leveraging Cursor, ChatGPT, prompt engineering, and OpenAI/LLM APIs to scaffold APIs, debug production systems, and accelerate feature delivery.',
+    'Champion of modern Cloud & AI-assisted engineering — deploying containerized services to GCP Cloud Run with automated CI/CD pipelines, and integrating Gemini & OpenAI/LLM APIs into production applications.',
   ],
 }
 
@@ -65,6 +65,16 @@ export const languages = [
 ]
 
 export const projects = [
+  {
+    title: 'AI Resume Screener & ATS Matcher',
+    role: 'Full Stack · Gemini AI · GCP CI/CD',
+    description:
+      'Decoupled full-stack AI platform built with Next.js 16 App Router, Express, and MySQL (GCP Cloud SQL). Evaluates resumes against job descriptions using Google Gemini 1.5 Flash API with automated CI/CD pipeline deploying Docker containers to GCP Cloud Run upon git push.',
+    tech: ['Next.js 16', 'TypeScript', 'Node.js', 'Express', 'MySQL (Cloud SQL)', 'Gemini API', 'Docker', 'GCP Cloud Run', 'CI/CD'],
+    liveUrl: 'https://ai-resume-backend-muwwcmrsma-ue.a.run.app/health',
+    githubUrl: 'https://github.com/harshvgupta1/ai-resume-backend',
+    image: null,
+  },
   {
     title: 'Spotlyt Campaign Platform',
     role: 'Full Stack · Next.js · Node.js',
@@ -132,8 +142,15 @@ export const skills = {
     'BullMQ',
   ],
   'Databases & Search': ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Elasticsearch'],
-  'Cloud & DevOps': ['GCP', 'Azure', 'Git / GitHub'],
+  'Cloud & DevOps': [
+    'GCP (Cloud Run, Cloud SQL, Cloud Build)',
+    'Docker',
+    'CI/CD Pipelines (GitHub Actions & Cloud Build)',
+    'Azure',
+    'Git / GitHub',
+  ],
   'AI & Tools': [
+    'Google Gemini API',
     'Cursor',
     'ChatGPT',
     'OpenAI / LLM APIs',
